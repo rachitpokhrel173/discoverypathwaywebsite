@@ -6,6 +6,7 @@ import { resources, getResourceBySlug } from "@/data/resources";
 import Container from "@/components/ui/Container";
 import Breadcrumbs from "@/components/shared/Breadcrumbs";
 import { renderMarkdown } from "@/lib/markdown";
+import { siteConfig } from "@/lib/utils";
 
 export function generateStaticParams() {
   return resources.map((r) => ({ slug: r.slug }));
@@ -49,7 +50,26 @@ export default async function ResourcePostPage({
     "@type": "Article",
     headline: post.title,
     description: post.excerpt,
+    image: `${siteConfig.url}${post.coverImage}`,
     datePublished: post.publishedAt,
+    dateModified: post.publishedAt,
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `${siteConfig.url}/resources/${post.slug}`,
+    },
+    author: {
+      "@type": "Organization",
+      name: siteConfig.name,
+      url: siteConfig.url,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: siteConfig.name,
+      logo: {
+        "@type": "ImageObject",
+        url: `${siteConfig.url}/apple-touch-icon.png`,
+      },
+    },
   };
 
   return (

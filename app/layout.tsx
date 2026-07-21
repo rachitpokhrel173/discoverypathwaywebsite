@@ -77,19 +77,36 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "EducationalOrganization",
+    "@type": ["EducationalOrganization", "LocalBusiness"],
     name: siteConfig.name,
     url: siteConfig.url,
     description: siteConfig.description,
     telephone: siteConfig.phone,
     email: siteConfig.email,
+    image: `${siteConfig.url}/images/og-image.jpg`,
+    priceRange: "$$",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Chandeshwori Margh",
+      streetAddress: "Tindobato Margh",
       addressLocality: "Banepa",
       addressRegion: "Kavrepalanchok",
       addressCountry: "NP",
     },
+    // TODO: replace with your office's actual lat/lng (get it from Google Maps: right-click your
+    // pin -> the coordinates are the first thing in the popup). This unlocks map-pin rich results.
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: 27.6316,
+      longitude: 85.5215,
+    },
+    openingHoursSpecification: [
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        opens: "10:00",
+        closes: "17:00",
+      },
+    ],
     sameAs: [siteConfig.social.facebook, siteConfig.social.instagram, siteConfig.social.tiktok],
   };
 
