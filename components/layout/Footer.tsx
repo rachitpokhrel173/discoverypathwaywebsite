@@ -8,6 +8,50 @@ import { siteConfig } from "@/lib/utils";
 export default function Footer() {
   return (
     <footer className="bg-ink text-paper">
+      <div className="border-b border-paper/10 bg-ink-soft py-6">
+        <Container className="flex flex-col items-center gap-4 text-center">
+          <p className="mono-label text-paper/60">Accreditations</p>
+          <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-4">
+            <div className="flex items-center gap-3">
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-full bg-paper">
+                <Image
+                  src="/images/brand/government-registration-logo.jpg"
+                  alt="Government of Nepal, Bagmati Province"
+                  width={40}
+                  height={40}
+                  className="h-full w-full object-contain p-1"
+                />
+              </div>
+              <span className="text-sm text-paper/80">Approved by Ministry of Education</span>
+            </div>
+            <div className="flex items-center gap-3">
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-full bg-paper">
+                <Image
+                  src="/images/partners/ecan.jpeg"
+                  alt="ECAN — Education Consultancy Association of Nepal"
+                  width={40}
+                  height={40}
+                  className="h-full w-full object-contain p-1"
+                />
+              </div>
+              <span className="text-sm text-paper/80">Member of ECAN</span>
+            </div>
+            <div className="flex items-center gap-3">
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-full bg-paper">
+                <Image
+                  src="/images/partners/kecan.png"
+                  alt="KECAN"
+                  width={40}
+                  height={40}
+                  className="h-full w-full object-contain p-1"
+                />
+              </div>
+              <span className="text-sm text-paper/80">Member of KECAN</span>
+            </div>
+          </div>
+        </Container>
+      </div>
+
       <Container className="section-pad">
         <div className="grid gap-12 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
           <div>

@@ -9,7 +9,7 @@ import DepartureBoardStats from "@/components/home/DepartureBoardStats";
 export const metadata: Metadata = {
   title: "About Discovery Pathway",
   description:
-    "Discovery Pathway is a Banepa-based international education consultancy founded to make honest, end-to-end visa and admissions guidance accessible outside Kathmandu.",
+    "Discovery Pathway is a government-registered, ECAN-member education consultancy in Banepa, Kavrepalanchok — 747+ visas approved, 97.9% success rate, and authorized partnerships for South Korea, Japan, Australia, and IELTS testing.",
   alternates: { canonical: "/about" },
 };
 
@@ -34,6 +34,25 @@ export default function AboutPage() {
       </div>
 
       <DepartureBoardStats />
+
+      <section className="bg-paper py-10">
+        <Container>
+          <p className="max-w-3xl text-sm leading-relaxed text-ink-60 sm:text-base">
+            Discovery Pathway is a government-registered, ECAN-member education consultancy based in
+            Banepa, Kavrepalanchok. As of 2026, we have supported <strong className="text-ink">747+ students</strong> to
+            visa approval, with a <strong className="text-ink">97.9% success rate</strong> across{" "}
+            <strong className="text-ink">50+ university partnerships</strong> in South Korea, Japan, Australia, the
+            UK, the USA, Canada, Germany, and Finland. We are an authorized British Council IELTS
+            registration centre and IDP's top-performing partner for Banepa, and we hold direct
+            representation agreements with Far East University and Gimhae University in South Korea. See
+            all of our{" "}
+            <Link href="/certificates" className="underline text-brass-dark hover:text-ink">
+              registration and partnership certificates
+            </Link>
+            .
+          </p>
+        </Container>
+      </section>
 
       <section className="section-pad bg-paper">
         <Container className="grid gap-12 lg:grid-cols-2">

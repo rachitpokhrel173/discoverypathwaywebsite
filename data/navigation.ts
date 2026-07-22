@@ -62,6 +62,7 @@ export const primaryNav: NavSection[] = [
   { label: "About", href: "/about" },
   { label: "Team", href: "/team" },
   { label: "Gallery", href: "/gallery" },
+  { label: "Certificates", href: "/certificates" },
 ];
 
 export const footerLinks = {
@@ -85,5 +86,6 @@ export const footerLinks = {
     { label: "Contact", href: "/contact" },
     { label: "Privacy Policy", href: "/privacy-policy" },
     { label: "Terms of Service", href: "/terms" },
+    { label: "Certificates", href: "/certificates" },
   ],
 };
