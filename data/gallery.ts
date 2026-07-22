@@ -1,6 +1,6 @@
 export interface GalleryImage {
   id: string;
-  category: "Team" | "Student Flights" | "University Visits" | "Events" | "Office";
+  category: "Team" | "Student Flights" | "University Visits" | "Events" | "Office" | "Students";
   src: string;
   caption: string;
 }
@@ -20,6 +20,52 @@ export const galleryImages: GalleryImage[] = [
   { id: "g12", category: "Office", src: "/images/gallery/office-1.jpg", caption: "Reception area at Discovery Pathway" },
   { id: "g13", category: "Office", src: "/images/gallery/office-2.jpg", caption: "Consultation room" },
   { id: "g14", category: "Office", src: "/images/gallery/office-3.jpg", caption: "Document processing desk" },
+  { id: "g15", category: "Team", src: "/images/gallery/student-photo-16.jpeg", caption: "The Discovery Pathway team" },
+  { id: "g16", category: "Events", src: "/images/gallery/student-photo-17.jpeg", caption: "A session at Discovery Pathway" },
+  { id: "g17", category: "Events", src: "/images/gallery/student-photo-18.jpeg", caption: "A session at Discovery Pathway" },
+  { id: "g18", category: "Events", src: "/images/gallery/student-photo-19.jpeg", caption: "A session at Discovery Pathway" },
+  { id: "g19", category: "Student Flights", src: "/images/gallery/student-photo-20.jpeg", caption: "Student send-off at the airport" },
+  { id: "g20", category: "Student Flights", src: "/images/gallery/student-photo-21.jpeg", caption: "Student send-off at the airport" },
+  { id: "g21", category: "Student Flights", src: "/images/gallery/student-photo-22.jpeg", caption: "Student send-off at the airport" },
+  { id: "g22", category: "Student Flights", src: "/images/gallery/student-photo-23.jpeg", caption: "Student send-off at the airport" },
+  { id: "g23", category: "Events", src: "/images/gallery/student-photo-24.jpeg", caption: " Discovery Pathway" },
+  { id: "g24", category: "Events", src: "/images/gallery/student-photo-25.jpeg", caption: " Discovery Pathway" },
+  { id: "g25", category: "Events", src: "/images/gallery/student-photo-26.jpeg", caption: " Discovery Pathway" },
+  { id: "g26", category: "Events", src: "/images/gallery/student-photo-27.jpeg", caption: " Discovery Pathway" },
+  { id: "g27", category: "Events", src: "/images/gallery/student-photo-28.jpeg", caption: " Discovery Pathway" },
+  { id: "g28", category: "Events", src: "/images/gallery/student-photo-29.jpeg", caption: " Discovery Pathway" },
+  { id: "g29", category: "Events", src: "/images/gallery/student-photo-30.jpeg", caption: " Discovery Pathway" },
+  { id: "g30", category: "Events", src: "/images/gallery/student-photo-31.jpeg", caption: "  Discovery Pathway" },
+  { id: "g31", category: "Events", src: "/images/gallery/student-photo-32.jpeg", caption: " Discovery Pathway" },
+  { id: "g32", category: "Events", src: "/images/gallery/student-photo-33.jpeg", caption: " Discovery Pathway" },
+  { id: "g33", category: "Events", src: "/images/gallery/student-photo-34.jpeg", caption: " Discovery Pathway" },
+  { id: "g34", category: "Events", src: "/images/gallery/student-photo-35.jpeg", caption: " Discovery Pathway" },
+  { id: "g35", category: "Events", src: "/images/gallery/student-photo-36.jpeg", caption: " Discovery Pathway" },
+  { id: "g36", category: "Events", src: "/images/gallery/student-photo-37.jpeg", caption: " Discovery Pathway" },
+  { id: "g37", category: "Events", src: "/images/gallery/student-photo-38.jpeg", caption: " Discovery Pathway" },
+  { id: "g38", category: "Events", src: "/images/gallery/student-photo-39.jpeg", caption: " Discovery Pathway" },
+  { id: "g39", category: "Events", src: "/images/gallery/student-photo-40.jpeg", caption: " Discovery Pathway" },
+  { id: "g40", category: "Events", src: "/images/gallery/student-photo-41.jpeg", caption: " Discovery Pathway" },
+  { id: "g41", category: "Events", src: "/images/gallery/student-photo-42.jpeg", caption: " Discovery Pathway" },
+  { id: "g42", category: "Events", src: "/images/gallery/student-photo-43.jpeg", caption: " Discovery Pathway" },
+  { id: "g43", category: "Events", src: "/images/gallery/student-photo-44.jpeg", caption: " Discovery Pathway" },
+  { id: "g44", category: "Events", src: "/images/gallery/student-photo-45.jpeg", caption: " Discovery Pathway" },
+  { id: "g45", category: "Events", src: "/images/gallery/student-photo-46.jpeg", caption: " Discovery Pathway" },
+  { id: "g46", category: "Events", src: "/images/gallery/student-photo-47.jpeg", caption: " Discovery Pathway" },
+  { id: "g47", category: "Events", src: "/images/gallery/student-photo-48.jpeg", caption: " Discovery Pathway" },
+  { id: "g48", category: "Events", src: "/images/gallery/student-photo-49.jpeg", caption: " Discovery Pathway" },
+  { id: "g49", category: "Students", src: "/images/gallery/student-photo-50.jpg", caption: "A Discovery Pathway student" },
+  { id: "g50", category: "Students", src: "/images/gallery/student-photo-51.jpg", caption: "A Discovery Pathway student" },
+  { id: "g51", category: "Students", src: "/images/gallery/student-photo-52.jpg", caption: "A Discovery Pathway student" },
+  { id: "g52", category: "Students", src: "/images/gallery/student-photo-53.jpg", caption: "A Discovery Pathway student" },
+  { id: "g53", category: "Students", src: "/images/gallery/student-photo-54.jpg", caption: "A Discovery Pathway student" },
+  { id: "g54", category: "Students", src: "/images/gallery/student-photo-55.jpg", caption: "A Discovery Pathway student" },
+  { id: "g55", category: "Students", src: "/images/gallery/student-photo-56.png", caption: "A Discovery Pathway student" },
+  { id: "g56", category: "Students", src: "/images/gallery/student-photo-57.png", caption: "A Discovery Pathway student" },
+  { id: "g57", category: "Students", src: "/images/gallery/student-photo-58.jpg", caption: "A Discovery Pathway student" },
+  { id: "g58", category: "Students", src: "/images/gallery/student-photo-59.jpg", caption: "A Discovery Pathway student" },
+  { id: "g59", category: "Students", src: "/images/gallery/student-photo-60.jpg", caption: "A visa-approved Discovery Pathway student" },
+  { id: "g60", category: "Students", src: "/images/gallery/student-photo-15.jpg", caption: "A Discovery Pathway student" },
 ];
 
-export const galleryCategories = ["All", "Team", "Student Flights", "University Visits", "Events", "Office"] as const;
+export const galleryCategories = ["All", "Team", "Student Flights", "University Visits", "Events", "Office", "Students"] as const;
