@@ -11,6 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/process",
     "/team",
     "/gallery",
+    "/certificates",
     "/faq",
     "/events",
     "/resources",
