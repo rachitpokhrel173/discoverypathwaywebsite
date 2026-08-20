@@ -17,7 +17,7 @@ export const siteConfig = {
   url: "https://discoverypathway.edu.np",
   phone: "+977-011-665659",
   whatsapp: "9779851345539",
-  email: "banepa@discoveryedu.com.np",
+  email: "info@discoverypathway.edu.np",
   address: "Tindobato Margh, Banepa-8, Kavrepalanchok, Nepal",
   social: {
     facebook: "https://facebook.com/discoverypathway",
