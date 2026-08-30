@@ -20,12 +20,12 @@ export const siteConfig = {
   email: "info@discoverypathway.edu.np",
   address: "Tindobato Margh, Banepa-8, Kavrepalanchok, Nepal",
   social: {
-    facebook: "https://facebook.com/discoverypathway",
-    instagram: "https://instagram.com/discoverypathway",
-    tiktok: "https://tiktok.com/@discoverypathway",
+    facebook: "https://www.facebook.com/discoveryconsultancybanepa",
+    instagram: "https://instagram.com/discovery.pathway",
+    tiktok: "https://www.tiktok.com/@discoverybanepa",
   },
   stats: {
-    visasApproved: 747,
+    visasApproved: 847,
     successRate: 97.9,
     universityPartners: 50,
     destinations: 16,
