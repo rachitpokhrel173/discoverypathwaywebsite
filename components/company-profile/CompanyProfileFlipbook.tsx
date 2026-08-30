@@ -19,6 +19,7 @@ import {
   profileCtaChecks,
   profileDestinations,
   profileMessage,
+  profileMessageMD,
   profileMeta,
   profileOutcomeChecks,
   profileOutcomes,
@@ -557,14 +558,47 @@ function buildPages(contents: { i: number; title: string }[]): ProfilePage[] {
     ),
   });
 
-  /* 14 — Contact ---------------------------------------------------- */
+  /* 14 — Message from the MD ---------------------------------------- */
+  pages.push({
+    title: "Message from the MD",
+    section: "Leadership",
+    node: (
+      <PageShell section="Leadership" folio="14" note="Banepa · Kavrepalanchok · Nepal">
+        <h2 className="dpcp-t2">
+          A message from our <em>Managing Director</em>
+        </h2>
+        <div className="dpcp-msg">
+          <div className="dpcp-msg__body">
+            {profileMessageMD.paragraphs.map((p, i) => (
+              <p className="dpcp-b" key={i}>
+                {p}
+              </p>
+            ))}
+            <div className="dpcp-sig">
+              <b>{profileMessageMD.author}</b>
+              <span>{profileMessageMD.role}</span>
+            </div>
+          </div>
+          <div>
+            <div className="dpcp-portrait">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/images/team/suman-gautam.jpg" alt={profileMessageMD.author} />
+            </div>
+            <p className="dpcp-portrait__cap">{profileMessageMD.author}</p>
+          </div>
+        </div>
+      </PageShell>
+    ),
+  });
+
+  /* 15 — Contact ---------------------------------------------------- */
   pages.push({
     title: "Contact",
     section: "Get in touch",
     node: (
       <PageShell
         section="Get in touch"
-        folio="14"
+        folio="15"
         note={`© ${new Date().getFullYear()} Discovery Pathway Pvt. Ltd. · All rights reserved`}
         dark
       >
@@ -639,7 +673,8 @@ export default function CompanyProfileFlipbook() {
       { i: 10, title: "Student Outcomes" },
       { i: 11, title: "Compliance & Ethics" },
       { i: 12, title: "Message from the CEO" },
-      { i: 13, title: "Contact" },
+      { i: 13, title: "Message from the MD" },
+      { i: 14, title: "Contact" },
     ],
     []
   );
