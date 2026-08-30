@@ -54,7 +54,7 @@ export const team: TeamMember[] = [
     id: "reewaz-adhikari",
     name: "Reewaz Adhikari",
     role: "Korea Manager",
-    bio: "Manages the South Korea desk end-to-end — university matching, TOPIK-linked scholarship applications, and D-2/D-4 visa filing. A Korea-pathway graduate himself.",
+    bio: "Manages the South Korea desk end-to-end — university matching, IELTS-linked scholarship applications, and D-2/D-4 visa filing. A Korea-pathway graduate himself.",
     photo: "/images/team/reewaz-adhikari.jpg",
     whatsapp: "9779851345539",
     facebook: "https://facebook.com/discoverypathway",

@@ -28,7 +28,7 @@ export const testimonials: Testimonial[] = [
     country: "South Korea",
     university: "Tongmyong University",
     quote:
-      "I started with zero Korean. Two years later I'm studying Business Administration in Busan on a TOPIK scholarship that covers most of my tuition. I now work at Discovery Pathway helping students walk the same path.",
+      "I started with zero Korean. Two years later I'm studying Business Administration in Busan on a IELTS scholarship that covers most of my tuition. I now work at Discovery Pathway helping students walk the same path.",
     photo: "/images/testimonials/reewaz-adhikari.jpg",
     rating: 5,
   },

@@ -21,7 +21,7 @@ export const destinations: Destination[] = [
     },
     whyStudyHere: [
       "Highest visa approval rate among our destinations, with the deepest institutional partner network we manage.",
-      "TOPIK-based scholarships can cover 30–100% of tuition at partner universities.",
+      "IELTS-based scholarships can cover 30–100% of tuition at partner universities.",
       "Strong part-time work culture lets students offset living costs legally from their second semester.",
       "Direct flights and an established Nepali student community across Busan, Seoul, and Daegu.",
     ],
@@ -40,14 +40,14 @@ export const destinations: Destination[] = [
       "Mechanical Engineering",
     ],
     scholarships: [
-      { name: "TOPIK Tuition Waiver", coverage: "30–100% tuition", eligibility: "TOPIK Level 3+ at application" },
+      { name: "IELTS Tuition Waiver", coverage: "30–100% tuition", eligibility: "IELTS Band 5.5+ at application" },
       { name: "GKS (Global Korea Scholarship)", coverage: "Full tuition + stipend", eligibility: "Top academic record, government-sponsored" },
     ],
     visaRequirements: [
       "Confirmed admission (Certificate of Admission) from a D-2/D-4 accredited institution",
       "Proof of financial capability (bank statement, sponsor documents)",
       "Academic transcripts and certificates, apostilled/notarized",
-      "TOPIK score (if applying with language exemption)",
+      "IELTS score (if applying with language exemption)",
       "Statement of Purpose and study plan",
       "Clean visa history disclosure — prior refusals must be declared accurately",
     ],
@@ -72,9 +72,9 @@ export const destinations: Destination[] = [
           "Yes. Prior refusals (including Australia or Korea itself) don't automatically disqualify you, but they must be disclosed accurately and explained with supporting documentation. We build a disclosure strategy specifically for this before submission.",
       },
       {
-        question: "Do I need TOPIK before I apply?",
+        question: "Do I need IELTS before I apply?",
         answer:
-          "Not always. Many D-4 language-track programs accept zero-level Korean and teach it on campus. D-2 degree-track programs at some universities require TOPIK 3+, though this varies by institution — we match you to universities based on your current level.",
+          "Not always. Many D-4 language-track programs accept zero-level english and teach it on campus. D-2 degree-track programs at some universities require IELTS 5.5+, though this varies by institution — we match you to universities based on your current level.",
       },
       {
         question: "How much can I realistically earn from part-time work?",

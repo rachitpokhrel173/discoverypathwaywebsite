@@ -27,7 +27,7 @@ export const faqs: FAQItem[] = [
     category: "Destinations",
     question: "Is South Korea really the easiest visa to get?",
     answer:
-      "Among our destinations, it currently has the highest approval rate we see for well-prepared Nepali applicants, largely due to strong TOPIK-linked scholarship access and deep partner-university relationships — but 'easiest' still requires a genuine, complete application.",
+      "Among our destinations, it currently has the highest approval rate we see for well-prepared Nepali applicants, largely due to strong IELTS-linked scholarship access and deep partner-university relationships — but 'easiest' still requires a genuine, complete application.",
   },
   {
     id: "faq-5",
@@ -48,7 +48,7 @@ export const faqs: FAQItem[] = [
     category: "Costs & Scholarships",
     question: "Can I get a scholarship with a low GPA?",
     answer:
-      "Some scholarships are GPA-gated, but others — like Korea's TOPIK-linked tuition waivers — weight language proficiency or entrance interviews more heavily than GPA. Use our cost calculator to see realistic tuition ranges, and we'll flag which scholarships you actually qualify for.",
+    "Some scholarships are GPA-gated, but others — like Korea's IELTS-linked tuition waivers — weight language proficiency or entrance interviews more heavily than GPA. Use our cost calculator to see realistic tuition ranges, and we'll flag which scholarships you actually qualify for.",
   },
   {
     id: "faq-8",
