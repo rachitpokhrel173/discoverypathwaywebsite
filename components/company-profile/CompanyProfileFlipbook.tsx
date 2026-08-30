@@ -653,6 +653,55 @@ function buildPages(contents: { i: number; title: string }[]): ProfilePage[] {
     ),
   });
 
+  /* 16 — Back Cover --------------------------------------------------- */
+  pages.push({
+    title: "Back Cover",
+    section: "Back Cover",
+    node: (
+      <div className="dpcp-page dpcp-page--dark dpcp-back">
+        <div className="dpcp-back__grid">
+          <div className="dpcp-wordmark">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/images/brand/logo-full-white.png" alt="Discovery Pathway" width={220} height={52} />
+          </div>
+
+          <div className="dpcp-back__mid">
+            <p className="dpcp-back__line">
+              Thank you for reading.
+              <br />
+              <em>We look forward to preparing your file.</em>
+            </p>
+            <div className="dpcp-pillrow">
+              <span className="dpcp-pill">Registered with the Ministry of Education</span>
+              <span className="dpcp-pill">ECAN Member</span>
+              <span className="dpcp-pill">KECAN Member</span>
+            </div>
+          </div>
+
+          <div className="dpcp-back__foot">
+            <div className="dpcp-cover__meta">
+              <div>
+                Telephone<b>{siteConfig.phone}</b>
+              </div>
+              <div>
+                Office<b>Tindobato Margh, Banepa-8</b>
+              </div>
+              <div>
+                Web<b>discoverypathway.edu.np</b>
+              </div>
+            </div>
+            <Stamp folio="16" dark />
+          </div>
+        </div>
+        <div className="dpcp-mrz">
+          P&lt;NPLDISCOVERY&lt;&lt;PATHWAY&lt;&lt;PVT&lt;&lt;LTD&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+          <br />
+          BNP011665659NPL&lt;&lt;COMPANYPROFILE&lt;&lt;EST2023&lt;&lt;&lt;&lt;&lt;&lt;16
+        </div>
+      </div>
+    ),
+  });
+
   return pages;
 }
 
@@ -1202,6 +1251,16 @@ const CSS = `
 .dpcp-mrz{font-family:var(--mono);font-size:11.5px;letter-spacing:.09em;color:#91A5BA;background:rgba(255,255,255,.05);
   border-top:1px solid rgba(255,255,255,.12);padding:10px 56px;line-height:1.5;white-space:nowrap;overflow:hidden;
   position:absolute;left:0;right:0;bottom:0;z-index:3}
+
+/* back cover */
+.dpcp-back{padding:0;display:block}
+.dpcp-back__grid{position:relative;z-index:2;height:100%;display:flex;flex-direction:column;
+  padding:50px 56px 40px;justify-content:space-between}
+.dpcp-back__mid{display:flex;flex-direction:column;gap:20px;align-self:center;text-align:center;max-width:56ch}
+.dpcp-back__line{font-family:var(--display);font-size:30px;line-height:1.28;font-weight:300;color:#F2EFE7;margin:0}
+.dpcp-back__line em{font-style:italic;color:var(--cyan)}
+.dpcp-back__mid .dpcp-pillrow{justify-content:center}
+.dpcp-back__foot{display:flex;align-items:flex-end;justify-content:space-between;padding-bottom:56px}
 
 /* contents */
 .dpcp-toc{display:grid;grid-template-columns:1fr 1fr;gap:0 44px;align-content:start}

@@ -303,16 +303,15 @@ export const profileMessage = {
     "Every file that crosses this office belongs to a family that has usually spent years, and often savings they cannot easily replace, to reach the point of applying. That is the weight we work under, and it is why we would rather lose a client than submit an application we know is weak. Your consultation costs nothing, and you will leave it knowing where you actually stand.",
   ],
 };
+
+/** Page 14 — signed message from the Managing Director. */
 export const profileMessageMD = {
-  paragraphs: [
-    "As Managing Director, my job is less about the students I meet in person and more about the systems that decide what happens to the ones I don't — how a counsellor is trained, how a file is checked before it leaves our office, and how quickly we say no when a course or a country isn't right for someone.",
-
-    "Since 2023 we've built that discipline deliberately. Every application that goes out under our name carries the same standard: financial documents that hold up, a study plan that matches the student's actual academic record, and a visa file with no gaps left for an officer to question. That consistency is what a five-person team competing against agencies ten times our size has to run on.",
-
-    "I spend a good part of each week on the parts families rarely see — renewing institutional agreements, sitting in on counsellor training, reviewing refused cases to find what we missed. None of it is glamorous, but it's the difference between an agency that places students and one that only submits applications on their behalf.",
-
-    "To every student who has trusted us with their file, and every parent who has trusted us with their savings: that trust is the only asset this company actually has. We intend to keep it.",
-  ],
   author: "Suman Kumar Gautam",
   role: "Managing Director · Discovery Pathway Pvt. Ltd.",
+  paragraphs: [
+    "As Managing Director, my job is less about the students I meet in person and more about the systems that decide what happens to the ones I don't — how a counsellor is trained, how a file is checked before it leaves our office, and how quickly we say no when a course or a country isn't right for someone.",
+    "Since 2023 we've built that discipline deliberately. Every application that goes out under our name carries the same standard: financial documents that hold up, a study plan that matches the student's actual academic record, and a visa file with no gaps left for an officer to question. That consistency is what a five-person team competing against agencies ten times our size has to run on.",
+    "I spend a good part of each week on the parts families rarely see — renewing institutional agreements, sitting in on counsellor training, reviewing refused cases to find what we missed. None of it is glamorous, but it's the difference between an agency that places students and one that only submits applications on their behalf.",
+    "To every student who has trusted us with their file, and every parent who has trusted us with their savings: that trust is the only asset this company actually has. We intend to keep it.",
+  ],
 };
