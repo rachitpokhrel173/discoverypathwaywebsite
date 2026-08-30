@@ -59,7 +59,21 @@ export const primaryNav: NavSection[] = [
       },
     ],
   },
-  { label: "About", href: "/about" },
+  {
+    label: "About",
+    href: "/about",
+    columns: [
+      {
+        heading: "The Company",
+        links: [
+          { label: "About Us", href: "/about", description: "Who we are" },
+          { label: "Company Profile", href: "/company-profile", description: "Full 14-page profile" },
+          { label: "Our Team", href: "/team", description: "The people behind the files" },
+          { label: "Certificates", href: "/certificates", description: "Registration & partnerships" },
+        ],
+      },
+    ],
+  },
   { label: "Team", href: "/team" },
   { label: "Gallery", href: "/gallery" },
   { label: "Certificates", href: "/certificates" },
@@ -74,6 +88,7 @@ export const footerLinks = {
     { label: "Compare Countries", href: "/destinations/compare" },
   ],
   resources: [
+    { label: "Company Profile", href: "/company-profile" },
     { label: "All Resources", href: "/resources" },
     { label: "Success Stories", href: "/success-stories" },
     { label: "Events & Seminars", href: "/events" },

@@ -13,7 +13,7 @@ export const faqs: FAQItem[] = [
     category: "Getting Started",
     question: "What services does Discovery Pathway actually provide?",
     answer:
-      "University and course selection, IELTS/TOPIK/language test preparation, document processing and admission form preparation, scholarship applications, visa filing and disclosure strategy, and pre-departure orientation. We manage the full journey, not just one stage of it.",
+      "University and course selection, IELTS/PTE/language test preparation, document processing and admission form preparation, scholarship applications, visa filing and disclosure strategy, and pre-departure orientation. We manage the full journey, not just one stage of it.",
   },
   {
     id: "faq-3",

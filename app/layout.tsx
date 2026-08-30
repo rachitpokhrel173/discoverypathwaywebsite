@@ -56,8 +56,6 @@ export const metadata: Metadata = {
     "D-2 visa Nepal",
     "D-4 visa Nepal",
     "study in South Korea from Nepal",
-    "TOPIK Nepal",
-    "TOPIK classes Banepa",
     "Korean language classes Banepa",
     "Gimhae University Nepal",
     "Japan student visa Nepal",

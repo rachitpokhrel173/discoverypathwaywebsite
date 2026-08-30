@@ -1,0 +1,150 @@
+Discovery Pathway — changes applied to the uploaded project
+===========================================================
+ADDED (4 new files)
+  app/company-profile/page.tsx
+  components/company-profile/CompanyProfileFlipbook.tsx
+  data/companyProfile.ts
+  CONTENT-NOTES.md
+
+MODIFIED (9 files) — unified diff below
+  data/navigation.ts            About dropdown + footer Resources link
+  app/sitemap.ts                /company-profile added
+  components/home/WhyChooseUs.tsx   TOPIK -> PTE
+  data/process.ts               TOPIK -> PTE
+  data/faqs.ts                  IELTS/TOPIK/... -> IELTS/PTE/...
+  data/gallery.ts               "TOPIK preparation workshop" -> "Test preparation workshop"
+  data/events.ts                "your current TOPIK level" -> "your current language level"
+  app/events/page.tsx           removed "TOPIK scholarships" from page description
+  app/layout.tsx                removed keywords "TOPIK Nepal", "TOPIK classes Banepa"
+
+REMOVED: nothing.
+
+diff -ru -x node_modules -x .next -x CONTENT-NOTES.md -x companyProfile.ts -x company-profile /home/claude/pristine/app/events/page.tsx ./app/events/page.tsx
+--- /home/claude/pristine/app/events/page.tsx	2026-07-21 02:12:58.000000000 +0000
++++ ./app/events/page.tsx	2026-08-30 07:51:54.678165647 +0000
+@@ -7,7 +7,7 @@
+ export const metadata: Metadata = {
+   title: "Events & Seminars",
+   description:
+-    "Upcoming and past seminars, webinars, and workshops from Discovery Pathway — TOPIK scholarships, visa writing, and test preparation.",
++    "Upcoming and past seminars, webinars, and workshops from Discovery Pathway — scholarships, visa writing, and test preparation.",
+   alternates: { canonical: "/events" },
+ };
+ 
+diff -ru -x node_modules -x .next -x CONTENT-NOTES.md -x companyProfile.ts -x company-profile /home/claude/pristine/app/layout.tsx ./app/layout.tsx
+--- /home/claude/pristine/app/layout.tsx	2026-07-22 07:12:32.000000000 +0000
++++ ./app/layout.tsx	2026-08-30 07:55:35.255733275 +0000
+@@ -56,8 +56,6 @@
+     "D-2 visa Nepal",
+     "D-4 visa Nepal",
+     "study in South Korea from Nepal",
+-    "TOPIK Nepal",
+-    "TOPIK classes Banepa",
+     "Korean language classes Banepa",
+     "Gimhae University Nepal",
+     "Japan student visa Nepal",
+diff -ru -x node_modules -x .next -x CONTENT-NOTES.md -x companyProfile.ts -x company-profile /home/claude/pristine/app/sitemap.ts ./app/sitemap.ts
+--- /home/claude/pristine/app/sitemap.ts	2026-07-22 09:19:47.000000000 +0000
++++ ./app/sitemap.ts	2026-08-30 07:52:05.769546248 +0000
+@@ -7,6 +7,7 @@
+   const staticRoutes = [
+     "",
+     "/about",
++    "/company-profile",
+     "/contact",
+     "/process",
+     "/team",
+diff -ru -x node_modules -x .next -x CONTENT-NOTES.md -x companyProfile.ts -x company-profile /home/claude/pristine/components/home/WhyChooseUs.tsx ./components/home/WhyChooseUs.tsx
+--- /home/claude/pristine/components/home/WhyChooseUs.tsx	2026-07-14 01:48:02.000000000 +0000
++++ ./components/home/WhyChooseUs.tsx	2026-08-30 07:51:54.677519833 +0000
+@@ -14,7 +14,7 @@
+   {
+     icon: GraduationCap,
+     title: "Test prep under one roof",
+-    body: "IELTS, TOPIK, and Japanese language instruction happen in-house, taught by staff who prepare your visa file too — so coaching and paperwork stay in sync.",
++    body: "IELTS, PTE, and Japanese language instruction happen in-house, taught by staff who prepare your visa file too — so coaching and paperwork stay in sync.",
+   },
+   {
+     icon: Landmark,
+diff -ru -x node_modules -x .next -x CONTENT-NOTES.md -x companyProfile.ts -x company-profile /home/claude/pristine/data/events.ts ./data/events.ts
+--- /home/claude/pristine/data/events.ts	2026-07-21 08:10:23.000000000 +0000
++++ ./data/events.ts	2026-08-30 07:51:54.678231608 +0000
+@@ -10,7 +10,7 @@
+     time: "11:00 AM",
+     location: "Discovery Pathway Office, Banepa",
+     description:
+-      "A walkthrough of IELTS-linked tuition waivers, which partner universities offer the strongest scholarships, and how to time your application around your current TOPIK level.",
++      "A walkthrough of IELTS-linked tuition waivers, which partner universities offer the strongest scholarships, and how to time your application around your current language level.",
+     image: "/images/events/korea-seminar.jpg",
+     isPast: false,
+     registrationOpen: true,
+diff -ru -x node_modules -x .next -x CONTENT-NOTES.md -x companyProfile.ts -x company-profile /home/claude/pristine/data/faqs.ts ./data/faqs.ts
+--- /home/claude/pristine/data/faqs.ts	2026-07-14 01:44:47.000000000 +0000
++++ ./data/faqs.ts	2026-08-30 07:51:54.677922980 +0000
+@@ -13,7 +13,7 @@
+     category: "Getting Started",
+     question: "What services does Discovery Pathway actually provide?",
+     answer:
+-      "University and course selection, IELTS/TOPIK/language test preparation, document processing and admission form preparation, scholarship applications, visa filing and disclosure strategy, and pre-departure orientation. We manage the full journey, not just one stage of it.",
++      "University and course selection, IELTS/PTE/language test preparation, document processing and admission form preparation, scholarship applications, visa filing and disclosure strategy, and pre-departure orientation. We manage the full journey, not just one stage of it.",
+   },
+   {
+     id: "faq-3",
+diff -ru -x node_modules -x .next -x CONTENT-NOTES.md -x companyProfile.ts -x company-profile /home/claude/pristine/data/gallery.ts ./data/gallery.ts
+--- /home/claude/pristine/data/gallery.ts	2026-07-22 10:45:15.000000000 +0000
++++ ./data/gallery.ts	2026-08-30 07:51:54.678040367 +0000
+@@ -15,7 +15,7 @@
+   { id: "g7", category: "University Visits", src: "/images/gallery/university-1.jpg", caption: "Partner university representative visit" },
+   { id: "g8", category: "University Visits", src: "/images/gallery/university-2.jpg", caption: "Campus tour briefing session" },
+   { id: "g9", category: "Events", src: "/images/gallery/event-1.jpg", caption: "Study abroad seminar in Banepa" },
+-  { id: "g10", category: "Events", src: "/images/gallery/event-2.jpg", caption: "TOPIK preparation workshop" },
++  { id: "g10", category: "Events", src: "/images/gallery/event-2.jpg", caption: "Test preparation workshop" },
+   { id: "g11", category: "Events", src: "/images/gallery/event-3.jpg", caption: "Education fair booth" },
+   { id: "g12", category: "Office", src: "/images/gallery/office-1.jpg", caption: "Reception area at Discovery Pathway" },
+   { id: "g13", category: "Office", src: "/images/gallery/office-2.jpg", caption: "Consultation room" },
+diff -ru -x node_modules -x .next -x CONTENT-NOTES.md -x companyProfile.ts -x company-profile /home/claude/pristine/data/navigation.ts ./data/navigation.ts
+--- /home/claude/pristine/data/navigation.ts	2026-07-22 03:35:43.000000000 +0000
++++ ./data/navigation.ts	2026-08-30 07:54:43.321112102 +0000
+@@ -59,7 +59,21 @@
+       },
+     ],
+   },
+-  { label: "About", href: "/about" },
++  {
++    label: "About",
++    href: "/about",
++    columns: [
++      {
++        heading: "The Company",
++        links: [
++          { label: "About Us", href: "/about", description: "Who we are" },
++          { label: "Company Profile", href: "/company-profile", description: "Full 14-page profile" },
++          { label: "Our Team", href: "/team", description: "The people behind the files" },
++          { label: "Certificates", href: "/certificates", description: "Registration & partnerships" },
++        ],
++      },
++    ],
++  },
+   { label: "Team", href: "/team" },
+   { label: "Gallery", href: "/gallery" },
+   { label: "Certificates", href: "/certificates" },
+@@ -74,6 +88,7 @@
+     { label: "Compare Countries", href: "/destinations/compare" },
+   ],
+   resources: [
++    { label: "Company Profile", href: "/company-profile" },
+     { label: "All Resources", href: "/resources" },
+     { label: "Success Stories", href: "/success-stories" },
+     { label: "Events & Seminars", href: "/events" },
+diff -ru -x node_modules -x .next -x CONTENT-NOTES.md -x companyProfile.ts -x company-profile /home/claude/pristine/data/process.ts ./data/process.ts
+--- /home/claude/pristine/data/process.ts	2026-07-14 01:45:06.000000000 +0000
++++ ./data/process.ts	2026-08-30 07:51:54.677818148 +0000
+@@ -21,7 +21,7 @@
+     title: "Test Preparation",
+     duration: "4–12 weeks",
+     description:
+-      "Structured coaching in IELTS, TOPIK, or Japanese language fundamentals depending on your destination, run by dedicated in-house instructors.",
++      "Structured coaching in IELTS, PTE, or Japanese language fundamentals depending on your destination, run by dedicated in-house instructors.",
+     whatWeDo: [
+       "Diagnostic assessment and personalized study plan",
+       "Weekly instruction with mock tests",

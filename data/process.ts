@@ -21,7 +21,7 @@ export const processStages: ProcessStage[] = [
     title: "Test Preparation",
     duration: "4–12 weeks",
     description:
-      "Structured coaching in IELTS, TOPIK, or Japanese language fundamentals depending on your destination, run by dedicated in-house instructors.",
+      "Structured coaching in IELTS, PTE, or Japanese language fundamentals depending on your destination, run by dedicated in-house instructors.",
     whatWeDo: [
       "Diagnostic assessment and personalized study plan",
       "Weekly instruction with mock tests",

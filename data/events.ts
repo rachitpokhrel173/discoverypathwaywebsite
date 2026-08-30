@@ -10,7 +10,7 @@ export const events: EventItem[] = [
     time: "11:00 AM",
     location: "Discovery Pathway Office, Banepa",
     description:
-      "A walkthrough of IELTS-linked tuition waivers, which partner universities offer the strongest scholarships, and how to time your application around your current TOPIK level.",
+      "A walkthrough of IELTS-linked tuition waivers, which partner universities offer the strongest scholarships, and how to time your application around your current language level.",
     image: "/images/events/korea-seminar.jpg",
     isPast: false,
     registrationOpen: true,

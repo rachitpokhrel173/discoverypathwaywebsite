@@ -7,7 +7,7 @@ import EventsList from "@/components/events/EventsList";
 export const metadata: Metadata = {
   title: "Events & Seminars",
   description:
-    "Upcoming and past seminars, webinars, and workshops from Discovery Pathway — TOPIK scholarships, visa writing, and test preparation.",
+    "Upcoming and past seminars, webinars, and workshops from Discovery Pathway — scholarships, visa writing, and test preparation.",
   alternates: { canonical: "/events" },
 };
 

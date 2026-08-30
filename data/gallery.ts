@@ -15,7 +15,7 @@ export const galleryImages: GalleryImage[] = [
   { id: "g7", category: "University Visits", src: "/images/gallery/university-1.jpg", caption: "Partner university representative visit" },
   { id: "g8", category: "University Visits", src: "/images/gallery/university-2.jpg", caption: "Campus tour briefing session" },
   { id: "g9", category: "Events", src: "/images/gallery/event-1.jpg", caption: "Study abroad seminar in Banepa" },
-  { id: "g10", category: "Events", src: "/images/gallery/event-2.jpg", caption: "TOPIK preparation workshop" },
+  { id: "g10", category: "Events", src: "/images/gallery/event-2.jpg", caption: "Test preparation workshop" },
   { id: "g11", category: "Events", src: "/images/gallery/event-3.jpg", caption: "Education fair booth" },
   { id: "g12", category: "Office", src: "/images/gallery/office-1.jpg", caption: "Reception area at Discovery Pathway" },
   { id: "g13", category: "Office", src: "/images/gallery/office-2.jpg", caption: "Consultation room" },

@@ -14,7 +14,7 @@ const reasons = [
   {
     icon: GraduationCap,
     title: "Test prep under one roof",
-    body: "IELTS, TOPIK, and Japanese language instruction happen in-house, taught by staff who prepare your visa file too — so coaching and paperwork stay in sync.",
+    body: "IELTS, PTE, and Japanese language instruction happen in-house, taught by staff who prepare your visa file too — so coaching and paperwork stay in sync.",
   },
   {
     icon: Landmark,
